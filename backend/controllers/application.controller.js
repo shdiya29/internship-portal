@@ -32,7 +32,7 @@ export const applyInternship =async(req,res) =>{
         internship.applications.push(newApplication._id);
         await internship.save();
         return res.status(201).json({
-            message:"Job applied successfully",
+            message:"Internship applied successfully",
             success:true
         })
     } catch (error) {
